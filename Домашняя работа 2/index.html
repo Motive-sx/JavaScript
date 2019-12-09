@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Домашняя работа - Урок 2 - JS1</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        /* ЗАДАНИЕ 1 
+            
+        //пример 1
+        let a = 1, b = 1, c, d;
+        c = ++a;
+        alert(c); // ответ: 2
+                
+        // Префиксный инкримент добавил к переменной a единицу и записал в отправил в с 2
+        a = 2, b =1, c = 2, d = undefined
+
+        //пример 2
+        d = b++;
+        alert(d); //ответ: 1
+
+        // b передал значение 1 в d, затем постфиксный инкримент добавил к b 1
+        a = 2, b = 2, c = 2, d = 1
+                
+        //пример 3
+        c = 2 + ++a;
+        alert(c); //ответ: 5
+                
+        // Префиксный инкримент добавил к а 1, затем к цифре 2 прибавилось 3 и записалось в с
+        a = 3, b =2, c = 5, d = 1
+                
+        //пример 4
+        d = 2 + b++;
+        alert(d); //ответ: 4
+        alert(a); //3
+        alert(b); //3
+                
+        //Сначала 2 + b дало результат 4 и записалось в d, затем постфиксный инкримент прибавил к b единицу
+        a = 3, b = 3, c = 5, d = 4
+                
+        */
+
+
+
+
+
+
+        /* ЗАДАНИЕ 2 
+                
+        let a = 2;
+        let x = 1 + (a *= 2);
+                 
+        // Создалась переменная а = 2, затем внутри переменной x переменная а умножилось на 2 и записалась в переменную а = 4, затем 4 + 1 и записалось в переменную x = 5 (Получилось a = 4, x = 5) 
+
+        */
+
+
+
+
+
+        /* ЗАДАНИЕ 3 
+                
+        let num1 = prompt("Число 1");
+        let num2 = prompt("Число 2");      
+            
+        function qwe1 (a, b) {
+            
+            if ( a >= 0 && b>=0 ) {
+                alert(a - b);
+                return;
+            } else if ( a < 0 && b < 0 ) {
+                alert(a * b);
+                return;
+            } else if (a < 0 && b >= 0) {
+                
+                var newA = Number(a);
+                var newB = Number(b);
+                alert(newA + newB);
+                return;
+                
+            } else if (a >= 0 && b < 0) {
+         
+                var newA = Number(a);
+                var newB = Number(b);
+                 alert(newA + newB);
+            }
+        }
+
+        qwe1(num1, num2);
+                
+        // Решение сам придумал, но так и не понял почему он переводит значение в строки и склеивает строки, пришлось преобразовывать вывод обратно в цифры.
+
+        */
+
+
+
+        /* ЗАДАНИЕ 4
+                
+        function one (num1, num2) {
+            alert(num1 + num2);
+            return;
+        }
+
+        function two (num1, num2) {
+            alert(num1 - num2);
+            return;
+        }
+                
+        function three (num1, num2) {
+            alert(num1 * num2);
+            return;
+        }
+                
+        function four (num1, num2) {
+            alert(num1 / num2);
+            return;
+        }
+
+        one(5, 5);
+        two(5, 5);
+        three(5, 5);
+        four(5, 5);
+                
+         */
+
+
+
+
+
+        /* ЗАДАНИЕ 5 
+                
+        var arg1 = +prompt("число 1");
+        var arg2 = +prompt("число 2");
+        var operation = prompt("что сделать");
+                
+        function mathOperation (arg1, arg2, operation)  {
+            switch (operation) {
+                case "Сложить":
+                    alert (arg1 + arg2);
+                    return;
+                case "Умножить":
+                    alert (arg1 * arg2);
+                     return;
+                case "Вычесть":
+                    alert (arg1 - arg2);
+                     return;
+                case "Разделить":
+                    alert (arg1 / arg2);
+                     return;
+                default: 
+                    alert("Нет такой операции");
+            }
+        }
+               
+        mathOperation (arg1, arg2, operation);
+
+        */
+
+
+
+        /* ЗАДАНИЕ 6 
+
+
+        var money = prompt("Введите сумму");
+
+        function message(money) {
+            var last = +(money.substr(money.length - 1, 1));
+            
+            switch (last) {
+                case 1:
+                    alert("Зачислено: " + money + " рубль");
+                    return;
+                case 0:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                    alert("Зачислено: " + money + " рублей");
+                    return;
+                case 2:
+                case 3:
+                case 4:
+                    alert("Зачислено: " + money + " рубля");
+                    return;
+                default:
+                    alert("неверно");
+                    return;
+            }
+        }
+        message(money);
+        
+*/
+        
+// Строку 172 взял с https://javascript.ru/forum/jquery/29710-vzyat-tolko-poslednyuyu-cifru.html
+// В остальном проблем не возникло.
+        
+        
+    </script>
+</body>
+
+</html>
