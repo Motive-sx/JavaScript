@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        'use strict';
+
+        /* ЗАДАНИЕ 5 */
+
+        const products = [{
+                id: 3,
+                price: 127,
+                photos: [
+                    "1.jpg",
+                    "2.jpg",
+                ]
+            },
+            {
+                id: 5,
+                price: 499,
+                photos: []
+            },
+            {
+                id: 10,
+                price: 26,
+                photos: [
+                    "3.jpg"
+                ]
+            },
+            {
+                id: 8,
+                price: 78,
+            },
+        ];
+
+        // Фильтр наличия фото
+        
+        const withPhotos = products.filter(
+            function(item) {
+                return "photos" in item && item.photos.length > 0
+            });
+
+        // Фильтр цены
+        
+        const toPrice = products.sort(
+            function(a, b) {
+                return a.price - b.price;
+            });
+
+    </script>
+</body>
+
+</html>
