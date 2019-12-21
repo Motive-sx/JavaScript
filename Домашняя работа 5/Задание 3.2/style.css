@@ -1,0 +1,35 @@
+.wrap {
+    position: absolute;
+    padding: 30px;
+    background-color: #111;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.hidden {
+    display: none;
+}
+
+span {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: lightgrey;
+    font-size: 34px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+span:hover {
+    background: grey;
+    color: white;
+}
