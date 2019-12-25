@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items">
+            <div class="box">
+               
+                <img src="1.jpg" alt="wh">
+                <div>
+                 <h4>Часы 1</h4>
+                    <span class="productPrice">3200</span>
+                    <i class="fas fa-ruble-sign"></i>
+                </div>
+                <button type="button" class="btn btn-success mt-3 toBasketBtn" data-id="1" data-price="3200" data-name="Товар 1">
+                    В корзину
+                </button>
+            </div>
+            <div class="box">
+                
+                <img src="1.jpg" alt="wh">
+                <div>
+                   <h4>Часы 2</h4>
+                    <span class="productPrice">7500</span>
+                    <i class="fas fa-ruble-sign"></i>
+                </div>
+                <button type="button" class="btn btn-success mt-3 toBasketBtn" data-id="2" data-price="7500" data-name="Товар 2">
+                    В корзину
+                </button>
+            </div>
+            <div class="box">
+                
+                <img src="1.jpg" alt="wh">
+                <div>
+                    <h4>Часы 3</h4>
+                    <span class="productPrice">5300</span>
+                    <i class="fas fa-ruble-sign"></i>
+                </div>
+                <button type="button" class="btn btn-success mt-3 toBasketBtn" data-id="3" data-price="5300" data-name="Товар 3">
+                    В корзину
+                </button>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="btn-group ml-auto">
+                <h2>
+                    Корзина
+                </h2>
+                <div class="dropdown-menu dropdown-menu-right basketPanel">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Имя</th>
+                                <th scope="col">Цена</th>
+                                <th scope="col">Кол-во</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="2" scope="row">Итого:</th>
+                                <td colspan="3">
+                                    <span class="total">0</span>
+                                    <i class="fas fa-ruble-sign"></i>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
